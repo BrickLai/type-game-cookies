@@ -1,0 +1,175 @@
+@import "./reset.css";
+
+:root {
+    --app-bg-dark: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-blue: #3c57ff;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+}
+
+
+body {
+    background-color: var(--app-bg-dark);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+    height:calc(100vh - 56px);
+}
+.main {
+    background-color: #fff;
+
+}
+
+header {
+    height: 60px;
+    background-color: #4dc2df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.head {
+    width:min(100% - 30px,1080px) ;
+    padding: 0 28px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    color:#fff;
+}
+
+.head h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px 0 20px;
+}
+
+section {
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 250px 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bell{
+    color: #fff;
+}
+
+.currenttime {
+    font-size: 100px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+}
+
+.distance{
+    display: flex;
+    line-height: 100%;
+    padding: 20px 0 20px 160px;
+}
+
+.timedistance {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+}
+.btns {
+    position: relative;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeinput {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: #EDEDED;
+    border-radius: 30px;
+}
+
+.timeinput span {
+    font-size: 30px;
+    color: #1a1d28;
+}
+
+.timeinput1 {
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 50px;
+    text-align: right;
+    margin-right: 5px;
+    background-color: #EDEDED;
+    border-radius: 30px 0 0 30px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1d28;
+    letter-spacing: 0.2px;
+    transition: background-color 0.25s ease-in-out;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.timeinput2 {
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 50px;
+    margin-left: 5px;
+    background-color: #EDEDED;
+    border-radius: 0 30px 30px 0;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1d28;
+    letter-spacing: 0.2px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+input[type="button"] {
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #63df21;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888B8C;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head> 
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="author" content="Brick">
+            <meta name="description" content="My project">
+            <meta name="keywords" content="HTML, CSS">
+            <link rel="shortcut icon" href="assets/img/Anker_logo.svg.png" type="image/x-icon">
+            <link rel="stylesheet" href="assets/style/index.css" media="screen"> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">   
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
+            <script src="assets/script/index.js" defer></script>
+            <title>JavaScript DOM</title>
+        </head>
+        <body>
+            <header>
+                <div class="head">
+                    <div>
+                        <h1><a href="#">Alarm</a></h1>
+                    </div>
+                    <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                    </nav>
+                </div>
+            </header>
+            <section>
+                <div class="currenttime" >
+                    <div id="time-hour" class="text">00</div>
+                    <div class="time-temp">:</div>
+                    <div id="time-minutes" class="text">00</div>
+                    <div class="time-temp">:</div>
+                    <div id="time-second" class="text">00</div>
+                </div>
+                <div class="distance">
+                    <i class="fa-solid fa-bell"></i>
+                    <p class="timedistance"></p>
+                </div>
+                <div class="btns">
+                    <div class="timeinput">
+                    <input class="timeinput1" type="number" >
+                    <span>:</span>
+                    <input class="timeinput2" type="number" >
+                    </div>
+                    <input class="setalarm" type="button" value="Set Alarm">
+                </div>
+            </section>
+        </body>
+    </html>
