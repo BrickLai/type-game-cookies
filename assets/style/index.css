@@ -19,157 +19,130 @@ body {
     margin-inline: auto;
     height:calc(100vh - 56px);
 }
-.main {
-    background-color: #fff;
-
-}
-
-header {
-    height: 60px;
-    background-color: #4dc2df;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: fixed; */
-}
-
-.head {
-    width:min(100% - 30px,1080px) ;
-    padding: 0 28px;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header h1 {
-    color:#fff;
-}
-
-.head h1 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-ul {
-    list-style: none
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px 0 20px;
-}
 
 section {
+padding: 100px 500px;
+}
+
+.boxtitle {
     width: 100%;
-    height: calc(100vh - 60px);
-    padding: 250px 650px;
-    justify-content: center;
-    align-items: center;
+    margin-left: 230px;
 }
 
-.fa-bell{
+.mainbox {
+    display: grid;
+    width: 670px; 
+    height: 450px;
+    border: 10px solid rebeccapurple;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(4,100px);
+    gap:10px;
+    
+}
+
+h2 {
     color: #fff;
+    margin-bottom: 20px;
 }
 
-.currenttime {
-    font-size: 100px;
-    font-weight: 600;
-    color: #fff;
-    display: flex;
-}
-
-.distance{
-    display: flex;
-    line-height: 100%;
-    padding: 20px 0 20px 160px;
-}
-
-.timedistance {
-    font-size: 20px;
-    color: #fff;
-    margin-left: 10px;
-}
 .btns {
-    position: relative;
-    top: 20px;
-    left: -20px;
-    width: 100%;
-    height: 50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
 }
-.timeinput {
-    display: flex;
-    width: 150px;
-    height: 50px;
-    background-color: #EDEDED;
-    border-radius: 30px;
+.shapebtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
 }
 
-.timeinput span {
-    font-size: 30px;
-    color: #1a1d28;
+li a:hover, .shape:hover, .shapebtn {
+    background-color: #111;
 }
 
-.timeinput1 {
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 50px;
-    text-align: right;
-    margin-right: 5px;
-    background-color: #EDEDED;
-    border-radius: 30px 0 0 30px;
-    font-size: 26px;
-    font-weight: 600;
-    color: #1a1d28;
-    letter-spacing: 0.2px;
-    transition: background-color 0.25s ease-in-out;
-}
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none;
-  margin: 0; 
-}
-input[type=number] {
-    -moz-appearance:textfield;
+.shape {
+    display: inline-block;
 }
 
-.timeinput2 {
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 50px;
-    margin-left: 5px;
-    background-color: #EDEDED;
-    border-radius: 0 30px 30px 0;
-    font-size: 26px;
-    font-weight: 600;
-    color: #1a1d28;
-    letter-spacing: 0.2px;
-    transition: background-color 0.25s ease-in-out;
+.shape-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.shape-content ul li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.shape-content a:hover {background-color: #f1f1f1}
+
+.shape:hover .shape-content {
+    display: block;
+}
+
+.colorbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+}
+
+.color {
+    display: inline-block;
+}
+
+.color-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.color-content ul li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+li a:hover, .color:hover, .colorbtn {
+    background-color: #111;
+}
+
+.color-content a:hover {background-color: #f1f1f1}
+
+.color:hover .color-content {
+    display: block;
 }
 
 input[type="button"] {
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    width: 150px;
+    margin:10px;
+    width: 120px;
     height: 50px;
     text-align: center;
-    background-color: #63df21;
+    background-color: #fb6b09;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #888B8C;
+    color: #fff;
     letter-spacing: 0.2px;
     cursor: pointer;
     transition: background-color 0.25s ease-in-out;
 }
+
+
+.item:nth-child() {
+    background-color: '';
+    border-radius: '';
+};
+
