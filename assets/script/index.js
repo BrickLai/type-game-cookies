@@ -26,34 +26,9 @@ addBtn.addEventListener('click', function() {
     } else if (!emailRegex.test(inputEmail)) {
         alert('A valid email is  required')
     } else {
-        
       for(let i = 0; i < arr.length; i++) {
-       
         contact.innerHTML = `Name:${arr[i - 2]}<br>City:${arr[i - 1]}<br>Email:${arr[i]}`;
         contacts.insertBefore(contact, contacts.children[0]);
-
-
-        
        } 
-       
     }
-
 })
-
-
-
-/* let arr = [];
-for(let i = 0; i < contacts.length; i++) {
-    arr.push(contacts[i]);
-};
-
-console.log(arr);
-
-let i = 1;
-addBtn.addEventListener('click', function() {
-    let inputName = inputName.innerHTML;
-    let inputCity = inputCity.innerHTML;
-    let inputEmail = inputEmail.innerHTML;
-    
-})
- */
