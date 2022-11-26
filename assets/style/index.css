@@ -29,120 +29,97 @@ padding: 100px 500px;
     margin-left: 230px;
 }
 
-.mainbox {
-    display: grid;
-    width: 670px; 
-    height: 450px;
-    border: 10px solid rebeccapurple;
-    grid-template-columns: repeat(6,100px);
-    grid-template-rows: repeat(4,100px);
-    gap:10px;
-    
-}
-
 h2 {
     color: #fff;
     margin-bottom: 20px;
 }
 
-.btns {
-    margin-bottom: 20px;
-    margin-left: 100px;
-}
-.shapebtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 60px;
-    text-decoration: none;
+.contacts-info {
+    display: flex;
+    gap: 20px;
 }
 
-li a:hover, .shape:hover, .shapebtn {
-    background-color: #111;
+.contacts-content{
+    display: flex;
+    gap:20px;
 }
 
-.shape {
-    display: inline-block;
-}
+input[type="text"] {
+    width: 160px;
+    height: 50px;
+    text-align: left;
+    border: 1px solid var(--app-blue);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #000;
+  }
 
-.shape-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.shape-content ul li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.shape-content a:hover {background-color: #f1f1f1}
-
-.shape:hover .shape-content {
-    display: block;
-}
-
-.colorbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 60px;
-    text-decoration: none;
-}
-
-.color {
-    display: inline-block;
-}
-
-.color-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.color-content ul li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-li a:hover, .color:hover, .colorbtn {
-    background-color: #111;
-}
-
-.color-content a:hover {background-color: #f1f1f1}
-
-.color:hover .color-content {
-    display: block;
-}
+  input[type="email"] {
+    width: 160px;
+    height: 50px;
+    text-align: left;
+    border: 1px solid var(--app-blue);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #000;
+  }
 
 input[type="button"] {
     justify-content: center;
     align-items: center;
-    margin:10px;
     width: 120px;
     height: 50px;
     text-align: center;
-    background-color: #fb6b09;
+    background-color: #33ab4e;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     letter-spacing: 0.2px;
-    cursor: pointer;
     transition: background-color 0.25s ease-in-out;
 }
 
+.contactsbox {
+    display: grid;
+    width: 670px; 
+    height: 450px;
+    margin-top: 20px;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(4,100px);
+    gap:10px;
+}
 
-.item:nth-child() {
-    background-color: '';
-    border-radius: '';
-};
+.contactsbox div {
+    color: #fff;
+    background-color: #33ab4e;
+}
 
+.savebtn {
+    display: flex;
+    justify-content: end;
+}
+
+.savecontacts{
+    width: 100px;
+    height: 100px;
+    background-color: #833cff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.contacts-content-info {
+    justify-content: center;
+}
