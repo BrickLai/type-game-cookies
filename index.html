@@ -16,35 +16,51 @@
             <title>JavaScript DOM</title>
         </head>
         <body>
+            <header>
+                <div class="nav-logo">
+                    <p>Fakebook</p> 
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Friends</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Groups</a></li>
+                        <li><a href="#">My ads</a></li>
+                        <li><a href="#">settings</a></li>
+                    </ul>
+                </div>
+                <div class="nav-avatar">
+                    <div>
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="userinfo">
+                        ID: brick56789 <br>
+                        Name: Brick Lai <br>
+                        User Name: Brick <br>
+                        Email: brick@email.com <br>
+                    </div>
+                </div>
+            </header>
             <section>
-                <div class="boxtitle">
-                   <h2>My contacts</h2>
+                <div class="post-input">
+                    <textarea class="post-input-content" placeholder="What's new, Brick?"></textarea>
+                </div>
+                <div class="postarea">
+                    <div>
+                            <input type="file" class="uploadpicture" id="uploadImg" >
+                            <i class="fa-solid fa-image"></i>
+                    </div>
+                    <div>
+                        <input type="button" class="postbtn" value="Post">
+                    </div>
+                    
+                </div>
+                <div class="post-content">
+
                 </div>
 
-                <div class="contacts-info">
-                        <div class="contacts-content">
-                            <form>
-                                <input type="text" class="inputname" placeholder="*name">
-                                <input type="text" class="inputcity" placeholder="*city">
-                                <input type="email" class="inputemail" placeholder="*email">
-                            </form>
-                        </div>
-                        <div class="addbutton">
-                            <input type="button" class="addbtn" value="Add">
-                        </div>
-                </div>
 
-                <div class="contactsbox">
-                
-                </div>
-                
-              
 
-            </section>
-            <div class="savebtn">
-                <div class="savecontacts">
-                    <p>Save contacts 0</p>
-                </div>
-            </div>
+            </section>            
         </body>
     </html>

@@ -1,34 +1,37 @@
 'use strict';
 
-let addBtn = document.querySelector('.addbtn');
-let contacts = document.querySelector('.contactsbox');
-let form = document.querySelector(".form");
-let arr = [];
-let arr2 = [];
+let avatar = document.querySelector('.fa-user-tie');
+let userInfo = document.querySelector('.userinfo');
+let file = document.querySelector('.uploadpicture');
+console.log(file);
 
-const emailRegex = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$/;
-addBtn.addEventListener('click', function() {
-    let inputName = document.querySelector(".inputname").value.trim() ;
-    let inputCity = document.querySelector(".inputcity").value.trim() ;
-    let inputEmail = document.querySelector(".inputemail").value.trim();
-    let contact = document.createElement('div');
-    arr.push(inputName);
-    arr.push(inputCity);
-    arr.push(inputEmail);
-    
-
-    if(inputName.length === 0) {
-        alert('Name is required');
-    } else if (inputCity.length === 0) {
-        alert('City is required');
-    } else if (inputEmail.length === 0) {
-        alert('Email is  required')
-    } else if (!emailRegex.test(inputEmail)) {
-        alert('A valid email is  required')
-    } else {
-      for(let i = 0; i < arr.length; i++) {
-        contact.innerHTML = `Name:${arr[i - 2]}<br>City:${arr[i - 1]}<br>Email:${arr[i]}`;
-        contacts.insertBefore(contact, contacts.children[0]);
-       } 
+let flag = 0;
+avatar.addEventListener('click', function() {
+    if(flag === 0){
+        userInfo.style.visibility = 'visible';
+        flag =1;
+    }else {
+        userInfo.style.visibility = 'hidden';
+        flag =0;
     }
-})
+})	
+
+    let postBtn = document.querySelector('.postbtn');
+    let postInputContent = document.querySelector('.post-input-content')
+    postBtn.addEventListener('click', function() {
+        let photo = file.files;
+        let div = document.createElement('div');
+        let item = document.querySelector('.post-content');
+        let reader = new FileReader();
+        item.insertBefore(div, item.children[0]);
+        reader.readAsDataURL(photo[0]);
+        reader.onload = function () {
+        let image = document.createElement('img');
+        image.width = '450';
+        image.src = reader.result; 
+        let items = document.querySelector('.post-content div');
+        items.append(image);
+    }
+
+        
+    })

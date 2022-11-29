@@ -9,117 +9,133 @@
     --app-orange: #ff833c;
 }
 
-
 body {
     background-color: var(--app-bg-dark);
 }
 
-.container {
-    width: min(100% - 30px, 1080px);
-    margin-inline: auto;
-    height:calc(100vh - 56px);
+header {
+    width: auto;
+    height: 56px;
+    display: flex;
+    background-color: #3a71f2;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
 }
+
+.nav-logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px 0 20px;
+}
+
+.nav-avatar {
+    padding-left: 200px;
+    position: relative;
+}
+
+.fa-user-tie {
+    font-size: 20px;
+    color: white;
+    margin-top: 95px;
+}
+
+.post-input{
+    background-color: #24272d;
+    border-radius: 10px 10px 0 0;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #24272d;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 10px 0 10px;
+}
+
+.postarea {
+    background-color: #24272d;
+    align-content: space-between;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+
 
 section {
-padding: 100px 500px;
+padding: 40px 600px;
+height:calc(100vh - 56px)
 }
-
-.boxtitle {
-    width: 100%;
-    margin-left: 230px;
-}
-
-h2 {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.contacts-info {
-    display: flex;
-    gap: 20px;
-}
-
-.contacts-content{
-    display: flex;
-    gap:20px;
-}
-
-input[type="text"] {
-    width: 160px;
-    height: 50px;
-    text-align: left;
-    border: 1px solid var(--app-blue);
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    transition: all 0.25s ease-in-out;
-    color: #000;
-  }
-
-  input[type="email"] {
-    width: 160px;
-    height: 50px;
-    text-align: left;
-    border: 1px solid var(--app-blue);
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    transition: all 0.25s ease-in-out;
-    color: #000;
-  }
 
 input[type="button"] {
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     text-align: center;
-    background-color: #33ab4e;
+    background-color: #3a71f2;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
     letter-spacing: 0.2px;
     transition: background-color 0.25s ease-in-out;
+    margin-left: 10px;
 }
 
-.contactsbox {
-    display: grid;
-    width: 670px; 
-    height: 450px;
-    margin-top: 20px;
-    grid-template-columns: repeat(3,200px);
-    grid-template-rows: repeat(10,80px);
-    gap:10px;
-}
 
-.contactsbox div {
+.fa-image{
     color: #fff;
-    background-color: #33ab4e;
 }
 
-.savebtn {
-    display: flex;
-    justify-content: end;
+.post-content{
+    width: 500px;
+    background-color: #24272d;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-.savecontacts{
-    width: 100px;
-    height: 100px;
-    background-color: #833cff;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+.post-content div {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.userinfo {
+    background-color: #3acdf2;
+    visibility: hidden;
     font-size: 12px;
-    font-weight: 600;
-    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
-.contacts-content-info {
-    justify-content: center;
+.uploadImg {
+    opacity:0;
+}
+
+.fa-image{
+    text-align: center;
+    margin-left: -270px ;
+}
+
+.uploadpicture {
+    opacity: 0;
 }
