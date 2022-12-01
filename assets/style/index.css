@@ -10,87 +10,167 @@
 }
 
 body {
-    background-color: var(--app-bg-dark);
+    background:url(../img/pexels-abdullah-ghatasheh-1631677.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-header {
-    width: auto;
-    height: 56px;
-    display: flex;
-    background-color: #3a71f2;
-    font-size: 14px;
-    justify-content: center;
-    align-items: center;
+.bottom-black {
+    width: 100%;
+    height: 75px;
+    background: black;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.6;
 }
 
-.nav-logo {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    padding-right: 200px;
+.game-title{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 400px;
 }
 
-.nav-links li {
-    display: inline;
-}
-
-.nav-links li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px 0 20px;
-}
-
-.nav-avatar {
-    padding-left: 200px;
-    position: relative;
-}
-
-.fa-user-tie {
-    font-size: 20px;
-    color: white;
-    margin-top: 95px;
-}
-
-.post-input{
-    background-color: #24272d;
-    border-radius: 10px 10px 0 0;
-}
-
-textarea {
-    width: 500px;
-    height: 100px;
-    resize: none;
-    border-radius: 10px;
-    background-color: #24272d;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 10px 0 10px;
-}
-
-.postarea {
-    background-color: #24272d;
-    align-content: space-between;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    padding: 10px;
-}
-
-
-section {
-padding: 40px 600px;
-height:calc(100vh - 56px)
-}
-
-input[type="button"] {
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 40px;
+.start-game {
+    margin-left: 100px;
+    background: url(../img/sign1.png) no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 9999;
     text-align: center;
-    background-color: #3a71f2;
-    border-radius: 30px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.stop-game {
+    margin-left: 220px;
+    background: url(../img/sign2.png) no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.intro-game {
+    margin-left: 340px;
+    background: url(../img/sign2.png) no-repeat;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.intro-content{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 650px;
+    top: 100px;
+    border: 7px solid skyblue;
+    padding: 30px 20px 20px 20px;
+    background: #fff;
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: 1px solic #ccc;
+    display: none;
+}
+
+.score {
+    background: url(../img/blank-board.png.png) no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    position: absolute;
+    right: 10px;
+    bottom: 150px;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 70px;
+}
+
+.success {
+    background: url(../img/Success-PNG-Clipart.png.png) no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    position: absolute;
+    top:-300px;
+    left: 300px;
+    animation: success 1s linear;
+    display: none;
+}
+
+@keyframes success {
+    from {top:-300px;}
+    to {top:100px}
+}
+
+.fail {
+    background: url(../img/Fail-Stamp-PNG-Clipart.png.png) no-repeat;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    position: absolute;
+    top:-300px;
+    left: 300px;
+    animation: success 1s linear;
+    display: none;
+}
+
+@keyframes fail {
+    from {top:-300px;}
+    to {top:100px}
+}
+
+.game-area{
+    padding: 300px 700px;
+}
+
+.timesetting {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 0 20px;
+}
+
+#timer {
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.remained {
+    position: absolute;
+    top:440px;
+    left:790px;
+}
+
+.word-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #73cfd9;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -99,43 +179,40 @@ input[type="button"] {
     margin-left: 10px;
 }
 
+.word-display span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.fa-image{
-    color: #fff;
 }
 
-.post-content{
-    width: 500px;
-    background-color: #24272d;
-    border-radius: 10px;
-    margin-top: 10px;
-}
 
-.post-content div {
-    margin-top: 10px;
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-}
 
-.userinfo {
-    background-color: #3acdf2;
-    visibility: hidden;
-    font-size: 12px;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-
-.uploadImg {
-    opacity:0;
-}
-
-.fa-image{
+input[type="button"] {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
     text-align: center;
-    margin-left: -270px ;
+    background-color: #73cfd9;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.2px;
+    transition: background-color 0.25s ease-in-out;
+    margin-left: 10px;
 }
 
-.uploadpicture {
-    opacity: 0;
+.post-input-content {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    resize: none;
+    margin: 20px 0 0 10px;
+    border-radius: 10px;
+    background-color: #24272d;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 10px 0 10px;
 }

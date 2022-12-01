@@ -13,54 +13,40 @@
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap">   
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
             <script src="assets/script/index.js" defer></script>
-            <title>JavaScript DOM</title>
+            <title>Fast-typing game</title>
         </head>
         <body>
-            <header>
-                <div class="nav-logo">
-                    <p>Fakebook</p> 
-                </div>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="#">Friends</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Groups</a></li>
-                        <li><a href="#">My ads</a></li>
-                        <li><a href="#">settings</a></li>
-                    </ul>
-                </div>
-                <div class="nav-avatar">
-                    <div>
-                        <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <div class="userinfo">
-                        ID: brick56789 <br>
-                        Name: Brick Lai <br>
-                        User Name: Brick <br>
-                        Email: brick@email.com <br>
-                    </div>
-                </div>
-            </header>
-            <section>
-                <div class="post-input">
-                    <textarea class="post-input-content" placeholder="What's new, Brick?"></textarea>
-                </div>
-                <div class="postarea">
-                    <div>
-                            <input type="file" class="uploadpicture" id="uploadImg" >
-                            <i class="fa-solid fa-image"></i>
-                    </div>
-                    <div>
-                        <input type="button" class="postbtn" value="Post">
-                    </div>
-                    
-                </div>
-                <div class="post-content">
-
+            <div class="game-area">
+                <div class="game-title">
+                    <p>Last Minute Type Game</p>
                 </div>
 
-
-
-            </section>            
+                <div class="word-display">
+                    <span>dinosaur</span>
+                </div>
+                <div class="word-input">
+                    <input type="text" class="post-input-content" placeholder="input the word">
+                </div>
+                <div class="timesetting">
+                    <div id="timer">90</div> 
+                    <div class="remained">Remained</div>
+                    <!-- <div id="warring" style="color:#fff"></div> -->
+                </div>
+            </div>
+            <div class="start-game">
+                  <span onclick="bgaudio()">Start</span>
+                  <audio src="./assets/audio/Escapism - Yung Logos.mp3" id="bgaudio"></audio>
+            </div>
+            <div class="stop-game">Stop</div>
+            <div class="intro-game">Intro</div>
+            <div class="intro-content">
+                Typing games are games for computer beginners to practice typing and get familiar with the keyboard. Beginners can gradually increase their typing speed according to their own level, from fingering, key positions to comprehensive practice and testing of the entire article.<br><br>
+                     &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Click Intro to close
+                <span class="close">Close X</span>
+            </div>
+            <div class="score"><span>0</span></div>
+            <div class="success"></div>
+            <div class="fail"></div>
+            <div class="bottom-black"></div>
         </body>
     </html>
