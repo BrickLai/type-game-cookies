@@ -28,25 +28,60 @@
                     <input type="text" class="post-input-content" placeholder="input the word">
                 </div>
                 <div class="timesetting">
-                    <div id="timer">90</div> 
+                    <div id="timer">10</div> 
                     <div class="remained">Remained</div>
                     <!-- <div id="warring" style="color:#fff"></div> -->
                 </div>
             </div>
-            <div class="start-game">
-                  <span onclick="bgaudio()">Start</span>
-                  <audio src="./assets/audio/Escapism - Yung Logos.mp3" id="bgaudio"></audio>
+
+            <div class="bottom-content">
+                <div class="start-game">
+                    <span onclick="bgaudio()">Start</span>
+                    <audio src="./assets/audio/Escapism - Yung Logos.mp3" id="bgaudio"></audio>
+                </div>
+                <div class="stop-game">Stop</div>
+                <div class="intro-game">Intro</div>
+                <div class="bottom-black"></div>
             </div>
-            <div class="stop-game">Stop</div>
-            <div class="intro-game">Intro</div>
+
             <div class="intro-content">
                 Typing games are games for computer beginners to practice typing and get familiar with the keyboard. Beginners can gradually increase their typing speed according to their own level, from fingering, key positions to comprehensive practice and testing of the entire article.<br><br>
                      &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Click Intro to close
                 <span class="close">Close X</span>
             </div>
             <div class="score"><span>0</span></div>
-            <div class="success"></div>
-            <div class="fail"></div>
-            <div class="bottom-black"></div>
+
+            <div class="scoreboard">
+                <h2>High Scores</h2>
+                <div class="rank-title">
+                    <div class="ranks-title">Ranks</div>
+                    <div class="score-ranks-title">Words</div>
+                    <div class="word-percentage-title">Percentage</div>
+                </div>
+                <div class="rank-content">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+            <div class="mistake">
+                <p>
+                    Time is really limited, please be careful!
+                </p>
+                <input type="button" class="close-confirm" value="Close">
+            </div>
+
+            <div class="result">
+                <p>
+                    Congratulations, your score is ,please refresh this page to restart
+                </p>
+                <input type="button" class="result-close-confirm" value="Close">
+            </div>
         </body>
     </html>
